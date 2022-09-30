@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+/*Creamos los estilos para los H2 y H3 en general (Toda la pagina.)*/
+
+h2 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+h3 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/*Modificamos el .App y le damos un background personalizado acorde a nuestros gustos.*/
+
+.app {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    122deg,
+    rgba(0, 0, 0, 1) 17%,
+    rgba(16, 68, 53, 1) 37%,
+    rgba(26, 175, 134, 1) 55%,
+    rgba(47, 252, 182, 1) 85%
+  );
+}
+
+/*Este es un contenedor con la clase "Display" el mismo contiene todos los datos que se ingresan en el formulario
+una vez ingresados se muestran en pantalla.*/
+.display {
+  width: 50%;
+  height: 560px;
+  color: white;
+  padding-top: 50px;
+  padding-left: 30px;
+  overflow: hidden;
+  background: black;
+  opacity: 0.7;
+  border-radius: 15px;
+  box-shadow: -5px -5px 7px -4px #ffffff;
+  transition-duration: .5s;
+}
+
+
+.display:hover {
+   box-shadow: -5px -5px 15px -4px #FFFFFF;
+}
+
+/*Este H1 fue editado de esta manera ya que queriamos darle un estilo especial (letter-spacing) solo para este H1 en especifico.*/
+.display h1 {
+  color: white;
+  letter-spacing: 1em;
+}
+
+/*Esta imagen contiene el logo de Matea. ademas en este contenedor se encuentran dos subtitulos H2 
+en los que se imprimen el valor de el input Nombre y de el input Apellido.*/
+
+.imagen1 {
+  display: flex;
+  width: 100%;
+  height: 170px;
+  padding-top: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.imagen1 img {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition-duration: .5s;
+}
+
+.imagen1 img:hover {
+  box-shadow: 2px 0px 16px 1px #FFFFFF;
+}
+
+.imagen1 h2 {
+  align-content: flex-end;
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+/*DatosP1 es un div en el que se encuentran 4 H3 en los que se imprimen diferentes valores 
+ingresados en los inputs. Este también cuenta con una imagen de el mapa de Uruguay que forma parte de el-
+estilo de la pogína.*/
+
+.DatosP1 {
+  width: 100%;
+  height: 140px;
+  margin-left: 50px;
+}
+
+.imgUruguay {
+  width: 80px;
+  height: 90px;
+  cursor: pointer;
+}
+
+/*Para DatosP2 se le dio un estilo bastante simple. este contiene 4 H2 en los que nuevamente se imprimen
+en pantalla los datos de los imputs correspondientes.*/
+
+.DatosP2 {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+
+/*Por ultimo el div formulario. este contiene todos un select con las diferentes opciones que se pueden
+elegir en el mismo. luego tenemos un H1 modificado con una clase para darle un estilo unico ya que
+al principio de la hoja de estilos le habiamos dado un estilo universal a todos los h1 que se encontraban en la pagína.
+y por ultimo tenemos un boton "Submit" con un efecto hover y su estilo correspondiente.*/
+
+.Formulario {
+  padding-top: 10px;
+  width: 560px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.formH1 {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+form,select {
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.formInput,
+select {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+form {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+input,
+select {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+label {
+  font-size: 15px;
+  color: gray;
+}
+
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  transition-duration: .5s;
+}
+
+button:hover {
+  background-color: rgb(24, 112, 90);
+  color: white;
+}
+
+/*RONY SILVA, BRUNO ALVEZ.*/
